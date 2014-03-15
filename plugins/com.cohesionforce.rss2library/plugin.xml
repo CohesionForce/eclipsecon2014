@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated rss2xml -->
+      <package
+            uri="http://www.w3.org/2005/Atom"
+            class="org.w3._2005.atom.AtomPackage"
+            genModel="model/rss2xml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated rss2xml -->
+      <parser
+            type="atom"
+            class="org.w3._2005.atom.util.AtomResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

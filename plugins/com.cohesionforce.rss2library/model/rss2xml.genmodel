@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.cohesionforce.rss2library/src-gen" modelPluginID="com.cohesionforce.rss2library"
+    modelName="Rss2xml" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>../schema/schema0.xsd</foreignModel>
+  <genPackages prefix="Atom" basePackage="org.w3._2005" resource="XML" disposableProviderFactory="true"
+      ecorePackage="atom.ecore#/">
+    <genClasses ecoreClass="atom.ecore#//AuthorType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//AuthorType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="atom.ecore#//ContentType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//ContentType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//ContentType/type"/>
+    </genClasses>
+    <genClasses ecoreClass="atom.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference atom.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference atom.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference atom.ecore#//DocumentRoot/feed"/>
+    </genClasses>
+    <genClasses ecoreClass="atom.ecore#//EntryType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference atom.ecore#//EntryType/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference atom.ecore#//EntryType/link"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//EntryType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//EntryType/updated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//EntryType/published"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference atom.ecore#//EntryType/content"/>
+    </genClasses>
+    <genClasses ecoreClass="atom.ecore#//FeedType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference atom.ecore#//FeedType/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference atom.ecore#//FeedType/link"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference atom.ecore#//FeedType/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//FeedType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//FeedType/updated"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference atom.ecore#//FeedType/entry"/>
+    </genClasses>
+    <genClasses ecoreClass="atom.ecore#//LinkType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//LinkType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//LinkType/href"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//LinkType/rel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//LinkType/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//LinkType/type"/>
+    </genClasses>
+    <genClasses ecoreClass="atom.ecore#//TitleType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//TitleType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute atom.ecore#//TitleType/type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
