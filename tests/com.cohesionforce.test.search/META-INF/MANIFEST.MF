@@ -15,6 +15,7 @@ Import-Package: com.cohesionforce.search,
  org.eclipse.emf.ecore.xmi,
  org.eclipse.emf.examples.extlibrary,
  org.junit;version="4.11.0",
+ org.junit.runner;version="4.11.0",
  org.junit.runners;version="4.11.0",
  org.w3._2005.atom
 Bundle-Activator: com.cohesionforce.test.search.Activator
