@@ -114,7 +114,10 @@ public class TestCreateIndex {
 		int count = 0;
 		long start = System.currentTimeMillis();
 		for (File file : directory.listFiles()) {
-
+			
+			if(file.getName().equals(".gitignore"))
+				continue;
+			
 			URI uri = URI.createFileURI(file.toString());
 			try {
 				ResourceSet resourceSet = new ResourceSetImpl();

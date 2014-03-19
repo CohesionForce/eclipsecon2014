@@ -70,6 +70,9 @@ public class TestTypeSearchTime {
 		long start = System.currentTimeMillis();
 		for (final File file : directory.listFiles()) {
 
+			if(file.getName().equals(".gitignore"))
+				continue;
+			
 			ResourceSet resourceSet = new ResourceSetImpl();
 
 			URI uri = URI.createFileURI(file.toString());
@@ -94,6 +97,9 @@ public class TestTypeSearchTime {
 		start = System.currentTimeMillis();
 		for (final File file : directory.listFiles()) {
 
+			if(file.getName().equals(".gitignore"))
+				continue;
+			
 			ResourceSet resourceSet = new ResourceSetImpl();
 
 			URI uri = URI.createFileURI(file.toString());
