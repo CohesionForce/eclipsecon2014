@@ -13,8 +13,17 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>kepler</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/kepler</url>
+		</repository>
+	</repositories>
 	<modules>
 		<module>plugins/com.cohesionforce.search</module>
+		<module>plugins/com.cohesionforce.rss2library</module>
+		<module>plugins/org.eclipse.emf.examples.library</module>
 		<module>cots/com.cohesionforce.cots.lucene</module>
 		<module>features/com.cohesionforce.feature.search</module>
 	</modules>
@@ -34,7 +43,7 @@
 		<profile>
 			<id>test</id>
 			<modules>
-				<module>tests/com.cohesionforce.search.test</module>
+				<module>tests/com.cohesionforce.test.search</module>
 			</modules>
 		</profile>
 	</profiles>
